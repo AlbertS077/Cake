@@ -1,0 +1,53 @@
+/* * {
+  margin: 0;
+  padding: 0;
+} */
+
+body {
+  max-width: 80%;
+}
+
+html {
+  font-family: "Emilys Candy", cursive;
+  background-image: url("1.jpg");
+}
+
+header {
+  color: coral;
+  font-size: 40px;
+  text-shadow: 20px 15px 20px pink;
+  margin: -70px;
+  padding: -500px;
+  align-items: center;
+  text-align: center;
+}
+
+footer {
+  margin: auto;
+  align-items: center;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 80px;
+}
+
+.cake_element {
+  opacity: 50%;
+  width: 25%;
+  float: left;
+  margin: 45px 0 0 3.5%;
+  background: #f0f0f0;
+  border-radius: 5px;
+  padding: 2%;
+}
+
+.cake {
+  border: #f0f0f0;
+  width: 75%;
+  float: left;
+  /* margin: 45px 0 0 3.5%; */
+  background: #f0f0f0;
+  border-radius: 5px;
+  /* padding-right: 5%; */
+}
