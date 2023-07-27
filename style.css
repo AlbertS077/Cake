@@ -3,18 +3,32 @@
   padding: 0;
 }
 
-body {
+/* body {
   max-width: 80%;
-}
+} */
 
 html {
   font-family: "Emilys Candy", cursive;
   background-image: url("1.jpg");
 }
 
+header {
+  opacity: 0;
+  animation: ani 3.5s forwards;
+}
+@keyframes ani {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 /* HEADER MENU START */
 .top-menu {
-  position: relative;
+  display: flex;
+  justify-content: center;
   background: rgba(34, 34, 34, 0.2);
 }
 .menu-main {
@@ -27,11 +41,8 @@ html {
   display: table;
   clear: both;
 }
-.left-item {
+.menu-main-item {
   float: left;
-}
-.right-item {
-  float: right;
 }
 .navbar-logo {
   position: absolute;
@@ -46,7 +57,6 @@ html {
   padding: 0 20px;
   font-size: 18px;
   letter-spacing: 2px;
-  font-family: "Arimo", sans-serif;
   font-weight: bold;
   color: coral;
   transition: 0.3s linear;
@@ -102,7 +112,8 @@ footer {
 }
 
 .cake_element {
-  opacity: 90%;
+  opacity: 65;
+  animation: ani 3.5s forwards;
   width: 25%;
   float: left;
   margin: 45px 0 0 3.5%;
@@ -111,12 +122,16 @@ footer {
   padding: 2%;
 }
 
+.cake_element img {
+  opacity: 100;
+  width: 270px;
+  height: 230px;
+}
+
 .cake {
   border: #f0f0f0;
   width: 75%;
   float: left;
-  /* margin: 45px 0 0 3.5%; */
   background: #f0f0f0;
   border-radius: 5px;
-  /* padding-right: 5%; */
 }
