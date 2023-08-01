@@ -1,0 +1,204 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* body {
+  max-width: 80%;
+} */
+
+html {
+  font-family: "Emilys Candy", cursive;
+  background-image: url("./pictures/1.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+header {
+  opacity: 0;
+  animation: ani 3.5s forwards;
+}
+@keyframes ani {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* HEADER MENU START */
+.top-menu {
+  display: flex;
+  justify-content: center;
+  background: rgba(34, 34, 34, 0.2);
+}
+.menu-main {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.menu-main:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.menu-main-item {
+  float: left;
+}
+
+.menu-main a {
+  text-decoration: none;
+  display: block;
+  line-height: 80px;
+  padding: 0 20px;
+  font-size: 20px;
+  letter-spacing: 2px;
+  font-weight: bold;
+  color: coral;
+  transition: 0.3s linear;
+}
+.menu-main a:hover {
+  background: rgba(0, 0, 0, 0.3);
+}
+@media (max-width: 830px) {
+  .menu-main {
+    padding-top: 90px;
+    text-align: center;
+  }
+  .navbar-logo {
+    position: absolute;
+    left: 50%;
+    top: 10px;
+    transform: translateX(-50%);
+  }
+  .menu-main li {
+    float: none;
+    display: inline-block;
+  }
+  .menu-main a {
+    line-height: normal;
+    padding: 20px 15px;
+    font-size: 16px;
+  }
+}
+@media (max-width: 630px) {
+  .menu-main li {
+    display: block;
+  }
+}
+/* HEADER MENU END */
+
+.mainText {
+  position: absolute;
+  display: flex;
+  margin: 0px auto;
+  color: coral;
+  left: 20px;
+  font-size: 29px;
+  text-shadow: 20px 15px 20px pink;
+  align-items: center;
+  text-align: center;
+}
+
+.cake_element {
+  opacity: 65;
+  animation: ani 3.5s forwards;
+  width: 25%;
+  float: left;
+  margin: 45px 0 0 3.5%;
+  background: #f0f0f0;
+  border-radius: 5px;
+  padding: 2%;
+}
+
+.cake_element img {
+  opacity: 100;
+  width: 270px;
+  height: 230px;
+}
+
+.cake {
+  border: #f0f0f0;
+  width: 75%;
+  float: left;
+  background: #f0f0f0;
+  border-radius: 5px;
+}
+
+.cake:focus {
+  width: 600px;
+  height: 600px;
+}
+
+/* FOOTER START*/
+
+footer {
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  justify-content: center;
+  background: rgba(34, 34, 34, 0.2);
+  opacity: 0;
+  animation: ani 3.5s forwards;
+}
+@keyframes ani {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.footerList {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footerElement a {
+  text-decoration: none;
+  display: block;
+  margin: 15px 15px;
+  padding: 0 20px;
+  font-size: 20px;
+  letter-spacing: 2px;
+  font-weight: bold;
+  color: coral;
+  transition: 0.3s linear;
+}
+.menu-main a:hover {
+  background: rgba(0, 0, 0, 0.3);
+}
+@media (max-width: 830px) {
+  .menu-main {
+    padding-top: 90px;
+    text-align: center;
+  }
+  .navbar-logo {
+    position: absolute;
+    left: 50%;
+    top: 10px;
+    transform: translateX(-50%);
+  }
+  .menu-main li {
+    float: none;
+    display: inline-block;
+  }
+  .menu-main a {
+    line-height: normal;
+    padding: 20px 15px;
+    font-size: 16px;
+  }
+}
+@media (max-width: 630px) {
+  .menu-main li {
+    display: block;
+  }
+}
+
+/* FOOTER END */
